@@ -16,7 +16,7 @@ jobs:
             uses: actions/checkout@v4
 
           - name: Install Goose
-            run:  go get -u github.com/pressly/goose/cmd/goose    
+            run:  go install github.com/pressly/goose/v3/cmd/goose@latest  
 
           - name: Set up Go
             uses: actions/setup-go@v5
